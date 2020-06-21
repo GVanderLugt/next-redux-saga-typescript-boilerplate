@@ -1,0 +1,49 @@
+{
+  "name": "next-redux-saga-typescript",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@feathersjs/feathers": "^4.5.3",
+    "@feathersjs/rest-client": "^4.5.4",
+    "@reduxjs/toolkit": "^1.3.6",
+    "@types/lodash": "^4.14.155",
+    "axios": "^0.19.2",
+    "lodash": "^4.17.15",
+    "next": "9.4.4",
+    "next-redux-wrapper": "^6.0.1",
+    "normalizr": "^3.6.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-saga": "^1.1.3",
+    "reselect": "^4.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --single-quote --write '**/*.js'"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.9",
+    "@types/react": "^16.9.35",
+    "@types/react-redux": "^7.1.9",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.7",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.3"
+  }
+}
